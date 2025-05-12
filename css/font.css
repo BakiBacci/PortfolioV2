@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@font-face {
+    font-family: 'Compare';
+    src: url('~assets/Fonts/Compare.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'adapta';
+    src: url('~assets/Fonts/Typekiln - AdaptaDisplay-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'adapta';
+    src: url('~assets/Fonts/Typekiln - AdaptaText-ExtraLight.otf') format('opentype');
+    font-weight: 200;
+}
+
+header{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+main h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    
+}
+
+aside h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    
+}
+aside h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+aside  p{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+    
+
+}
+aside .about a{
+    color: black;
+}
+
+aside .contact a{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+    color:black
+
+}

@@ -1,0 +1,106 @@
+header{
+    display: flex;
+    flex-direction: row;
+    
+    background-color: white;
+     align-items: flex-start;
+     padding-left: 30px;
+    padding-right: 40px;
+     border-bottom: 1px black solid;
+     
+}
+
+
+/* Titres */
+h1 {
+    
+    font-weight: 200;
+    color: black;
+  }
+  
+  /* Conteneur principal */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  /* Swiper */
+  .swiper-container {
+    width: 100%;
+    height: 60vh;
+    margin-top: 30px;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* Contenu des slides */
+  .slide-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  /* Textes dans les slides */
+  .slide-content h3,
+  .slide-content p,
+  .slide-content a {
+    font-family: 'adapta', sans-serif;
+    font-weight: 200;
+  }
+  
+  /* Lien vers les projets */
+  .project-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  .project-link:hover {
+    background-color: black;
+  }
+  
+  /* Swiper navigation */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: black;
+  }
+  
+  /* Pagination Swiper */
+  .swiper-pagination-bullet {
+    background: black;
+    opacity: 0.5;
+    width: 12px;
+    height: 12px;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+  
+  main{
+    border-bottom: 1px black solid;
+  }
+
+  aside{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    
+
+
+  }
