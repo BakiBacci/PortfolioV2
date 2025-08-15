@@ -3,18 +3,18 @@
 
 @font-face {
     font-family: 'Compare';
-    src: url('~assets/Fonts/Compare.otf') format('opentype');
+    src: url('/Fonts/Compare.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'adapta';
-    src: url('~assets/Fonts/Typekiln - AdaptaDisplay-ExtraBold.otf') format('opentype');
+    src: url('/Fonts/Typekiln\ -\ AdaptaDisplay-ExtraBold.otf') format('opentype');
     font-weight: 800;
 }
 
 @font-face {
-    font-family: 'adapta';
-    src: url('~assets/Fonts/Typekiln - AdaptaText-ExtraLight.otf') format('opentype');
+    font-family: 'AdaptaText';
+    src: url('/Fonts/Typekiln-AdaptaText-ExtraLight.otf') format('opentype');
     font-weight: 200;
 }
 

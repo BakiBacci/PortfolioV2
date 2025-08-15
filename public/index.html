@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Isaac BATCHI - Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="./js/swiper.js" defer></script>
+  
+ 
+  
+
+</head>
+<body>
+  <header>
+      <h1>Isaac BATCHI</h1>
+  </header>
+  
+  <main>
+    <div class="container">
+      <h1>Mes projets web</h1>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Les slides seront générés ici par JavaScript -->
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </main>
+  <aside>
+    <div class="content">
+        <div class="about">
+        <h1>A propos de moi</h1>
+        <p>Isaac Batchi, jeune Parisien de 23 ans passionné par le développement web, <br>
+           je souhaite me professionnaliser en tant que  <strong>développeur front-end</strong>.<br>
+           Je propose mes services en freelance, mais je suis également ouvert à une opportunité en entreprise pour approfondir mes compétences et mon expérience. <br>
+           Vous Pouvez me laisser un mail à <a href="mailto:isaakibat@gmail.com">isaakibat@gmail.com</a> ou au 07.81.20.83.25
+        </p>
+    </div>
+    <div class="documents">
+
+    <div class="contact">
+        <h2>Me contacter</h2>
+        
+        <a href="./assets/pdf/Nu_CV.pdf"  >Consultez mon cv ! </a>
+        <p>N'hésitez pas à me laisser une message, je tâcherais de vous répondre au plus vite.</p>
+    
+  </aside>
+    <div class="form">
+      <form id="contactForm" action="" method="post">
+        <ul class="form-list">
+          <li>
+            <label>Civilité</label>
+            
+              <div class="radio-option">
+                <input type="radio" id="civilite-monsieur" name="civilite" value="monsieur" checked>
+                <label for="civilite-monsieur">Monsieur</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="civilite-madame" name="civilite" value="madame">
+                <label for="civilite-madame">Madame</label>
+              </div>
+              
+            
+          </li>
+    
+          <!-- Champs existants -->
+          <li>
+            <label for="nom">Nom</label>
+            <input id="nom" type="text" name="user_name" placeholder="Votre nom">
+          </li>
+          <li>
+            <label for="mail">Email</label>
+            <input id="mail" type="email" name="user_email" placeholder="Votre email">
+          </li>
+          <li>
+            <label for="tel">Téléphone</label>
+            <input id="tel" type="tel" name="user_tel" placeholder="Votre numéro de téléphone">
+          </li>
+          <li>
+            <label for="msg">Message</label>
+            <textarea id="msg" name="user_msg" placeholder="Votre message"></textarea>
+          </li>
+          <li class="button-item">
+            <button id= "submit_button" type="submit">Envoyer le message</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+    </div>
+      <script defer >
+        const formulaire = document.getElementById("contactForm")
+
+formulaire.addEventListener("submit", async (event)=> {
+event.preventDefault();
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    
+    const result = await response.json();
+    alert(result.message || "Merci pour votre message !");
+  } catch (error) {
+    console.error("Erreur:", error);
+    alert("L'envoi a échoué");
+  }
+});
+
+      </script>  
+</body>
+</html>

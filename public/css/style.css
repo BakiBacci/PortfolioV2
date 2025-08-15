@@ -104,3 +104,61 @@ h1 {
 
 
   }
+
+  .form{
+list-style: none;
+font-family: 'Poppins';
+height: 40vh;
+width: 50%;
+
+
+}
+
+.form-list{
+    list-style: none;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.form-list input, textarea {
+    font-family: 'Poppins';
+    height:30px;
+    padding-left: 3px;
+}
+
+.form-list li{
+    display:flex;
+    flex-direction:column;
+    width: 45%
+}
+
+.form-list li textarea{
+    height:30vh;
+    width: 30vw
+
+}
+
+.form-list li button{
+    padding: 10px 20px;
+  background-color: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-family: 'Poppins';
+  border: none;
+
+
+}
+
+.form-list li button:hover{
+    background-color: black;
+}
+.radio-option{
+    display:flex;
+    flex-direction:row;
+    gap: 6px;
+    align-items:center
+}
